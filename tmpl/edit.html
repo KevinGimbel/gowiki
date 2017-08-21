@@ -1,0 +1,13 @@
+{{ define "content" }}
+<h1>Editing "{{.Title}}"</h1>
+
+<form action="/save/{{.Title}}" method="POST">
+    <label for="edit-title">Title
+        <input type="text" name="title" id="edit-title">
+    </label>
+    <label for="edit-body">Body
+        <textarea name="body" rows="20" cols="80" id="edit-body">{{printf "%s" .Body}}</textarea>
+    </label>
+    <input type="submit" value="Save">
+</form>
+{{ end }}

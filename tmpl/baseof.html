@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Kevin Gimbel">
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>Go Wiki</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <nav>
+                <a href="/view/frontpage">Front Page</a>
+                <a href="/view/about">About</a>
+            </nav>
+        </header>
+        <aside class="sidebar">
+            Page Index:
+        </aside>
+        <main id="main"  role="main" class="content">
+            {{ template "content" . }}
+        </main>
+        <footer class="footer" role="contentinfo">
+            <p>Powered by Go!</p>
+        </footer>
+    </div>
+</body>
+</html>
